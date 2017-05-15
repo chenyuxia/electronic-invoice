@@ -1,0 +1,11 @@
+{
+    "resultCode": "0",
+    "errorMsg": "1",
+    "result": {
+        "status": "N",
+        "policyNo": "2356",
+        "mobile": "1326555658",
+        "premium": "232356",
+        "tax":"6%"
+    }
+}

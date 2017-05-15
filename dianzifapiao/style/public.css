@@ -1,0 +1,96 @@
+/*初始化*/
+*{margin:0px;padding:0px;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-appearance:none;outline:none;word-break:break-all;box-sizing:border-box;-webkit-box-sizing:border-box;}
+*:not(input,textarea) {-webkit-touch-callout: none;-webkit-user-select: none;}
+html,body{width:100%;font-family:Arial,"Microsoft YaHei"; font-size: 100px; }
+body{ background: #f0f0f0 ; color: #111;}
+input{-webkit-user-select:initial;font-family:Arial,"Microsoft YaHei";border:none;}
+i,em{font-style: normal}
+a{text-decoration:none;}
+ul,ol,li{list-style:none;}
+h1,h2,h3,h4,h5,h6,strong,th{ font-weight: normal; }
+img{border:0;}
+
+/*清除浮动*/
+.clr{*zoom: 1;}
+.clr:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix {display: block;}
+/*左浮动*/
+.fl{float: left;}
+/*右浮动*/
+.fr{float: right;}
+/* white-space: nowrap;  text-overflow: ellipsis; overflow: hidden; */
+
+
+/* 头部样式 */
+header{ position: fixed; width: 100%; z-index: 99;}
+.top{height: .88rem; line-height: .88rem; background: #fa0000; text-align: center; color: #fff; font-size: .38rem; position: relative; }
+.top a{ position: absolute; left: .16rem; font-size: .34rem; display: block; height: .88rem; width: 1.1rem; color: #fff; padding-left: .3rem;
+            background: url(../images/arrow.png)no-repeat 0 .24rem; background-size: .22rem .36rem ;}
+
+/* 微信公众号电子发票入口 */
+.homePage .bill p:last-child{  border-bottom: 1px dashed #ccc!important; margin-bottom: .4rem; }
+
+/* 用户填写信息 */
+.main{ padding-top: .88rem; font-size: .28rem;}
+.main .w{  background: #fff; margin: .3rem .25rem; }
+.main input{ background: none; font-size: .26rem; width: 69%; white-space: nowrap;  text-overflow: ellipsis; overflow: hidden; line-height: .88rem; }
+.main .tel input{ width: 41%; }
+.main .tel a{ font-size: .23rem; color: #fa0000;  text-align: center; line-height: .6rem; display: inline-block; width: 28%; white-space: nowrap;  text-overflow: ellipsis; overflow: hidden; vertical-align: middle; }
+.main .tel .colorGrye{ color: #999; border: 1px solid #aaa;border-radius: 3px;}
+.main h2{ font-size: .34rem; text-align: center; height: 1.2rem; line-height: 1.2rem; position: relative; }
+.main h2 .round-l{ position: absolute; left:-.18rem; bottom: -.18rem; }
+.main h2 .round-r{ position: absolute; right:-.18rem; bottom: -.18rem; }
+.main h2 i{ display: inline-block; width: .36rem; height: .36rem; background: #f0f0f0; border-radius: 50%; }
+.main .bill{ padding: 0 .24rem; border-top: 1px solid #b1b1b1; }
+.main .bill p{ line-height: .9rem; border-bottom: 1px dashed #ccc; padding: 0 .12rem; position: relative; }
+.main .bill p i{ display:none; position: absolute; width: .3rem; height: .3rem; background: url(../images/xx.png); right: 0; top: .3rem; }
+.main .bill p:last-child{ border-bottom: none; }
+.main label{ width: 31%; display: inline-block; }
+.main label em{ color: #fa0000; }
+.main h3{ font-size: .34rem; line-height: .9rem; border-bottom: 1px solid #b1b1b1;}
+.main h3 span{ display: inline-block; float: right; height: .9rem; width: .35rem;}
+.main h3 .shut{ background: url(../images/arrow1.png) center center no-repeat; background-size: .25rem .35rem; }
+.main h3 .open{ background: url(../images/arrow2.png) center center no-repeat; background-size: .35rem .25rem; }
+.main .taxpayer{ border-bottom: 1px solid #b1b1b1; display: none; }
+.main table{ width: 100%; text-align: center; margin-top: .2rem; line-height: .5rem; padding-bottom: .35rem;}
+.main table td{ color: #666; }
+.main .botbg{ height: .18rem; background: url(../images/btbg.png)no-repeat; background-size: 100% 100%; }
+.main .btn{ margin: .98rem .55rem ; background: #fa0000; color: #fff; line-height: .9rem; text-align: center; border-radius: .1rem; font-size: .36rem;}
+.main .btn-no{ margin: .98rem .55rem 2.3rem; background: #f3a8a8; color: #fff; line-height: .9rem; text-align: center; border-radius: .1rem; font-size: .36rem;}
+
+/* 提交发票信息弹出层-确认信息 */
+.billMc { position: absolute; left: 0; top: 0; height: 100%; width: 100%;  z-index: 999999;display: none;}
+.billMc .mcbg{ background: #000; opacity: 0.6; height: 100%;  }
+.mc-main{ position: absolute; width: 86%; background: #fff; left: 50%; margin-left: -43%; top: 50%; margin-top: -2.85rem; padding-bottom: .45rem; border-radius: .1rem; }
+.mc-main h6{ line-height: 1.1rem; font-size: .32rem; background: url(../images/msg.png)no-repeat 15% center; background-size: .57rem .57rem; text-indent: 27%; font-weight: bold;}
+.mc-main .useInfor{ border-top: 1px solid #ddd; padding: .46rem .3rem; }
+.mc-main .useInfor>div{ margin-bottom: .18rem; }
+.mc-main .til{ float: left; width: 25%; color: #818181;}
+.mc-main .text{ float: left; width: 75%; color: #333; }
+.mc-main .btns div{ float: left; line-height: .94rem;text-align: center; border-radius: .06rem; }
+.mc-main .btns .btn1{  width: 37%;  margin: 0 .3rem;  background: #eee; border: 1px solid #d2d2d2; line-height: .92rem; }
+.mc-main .btn2{  width: 48%; background: #fa0000; color: #fff; }
+
+/* 提交发票信息弹出层-开票成功 */
+.mc-main2{ position: absolute; width: 81%; left: 50%; margin-left: -41%; top: 50%; margin-top: -2.85rem; padding: 0 .8rem;
+			background: #fff url(../images/ok.png)no-repeat center .4rem; border-radius: .1rem; background-size: .68rem .68rem;}
+.mc-main2 p{ margin-top: 1.5rem; text-align: center; color: #666; line-height: .4rem; } 
+.mc-main2 .btn{ margin: .52rem auto; line-height: .75rem; width: 49%; background: #fa0000; color: #fff; text-align: center; border-radius: .08rem; }
+.billDetails .bill>p{ line-height: .38rem; padding: .28rem .12rem; }
+.billDetails .bill label{ width: 31%; float: left; }
+.billDetails .bill span{ display: inline-block; width: 69%; float: left; }
+.billDetails .bill .state{ text-decoration: underline; color: #2aa4f9; font-size: .28rem; text-align: center; padding: .26rem 0 .38rem;display: block;}
+.billDetails .bill .stateOk{ text-decoration:none; color: #2aa4f9; font-size: .28rem; text-align: center; padding: .26rem 0 .38rem; color: #fa0000; }
+.billDetails .btns{ margin-top: .4rem; padding: 0 .25rem; display: none;}
+.billDetails .btns a{ float: left; line-height: .88rem; text-align: center; border-radius: .06rem; width: 47%; color: #fff; display: block;}
+.billDetails .btns .btn1{ background: #fa0000;  float: left; }
+.billDetails .btns .btn2{ background: #09bb07; float: right; }
+.plusok{ width: 65%; margin-left: -32.5%; margin-top: -1.85rem;}
+
+
+.bill p,.bill input{position: relative;}
+.bill input{z-index: 1;}
+.errorTips{position: absolute;top: 0px;left: 50%;margin-left: -200px;font-size: .26rem; color: #fa0000;display: none;}
+.main .btnGary{background: #bbb;}
+.main .tel .errorTips{width: 45%;display: none;}
+.main .tel a.send0{background: #aaa;color: #fff;border-radius: 3px;}

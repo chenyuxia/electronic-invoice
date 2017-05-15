@@ -1,0 +1,15 @@
+{
+	"resultCode":"0",
+	"errorMsg":"1",
+	"result":{
+		"invoiceTitle":"华安财产保险股份有限公司",
+		"invoiceAmount":"33.96元",
+		"taxAmount":"2.04元",
+		"salesParty":"华安财产保险股份有限公司",
+		"invoiceCode":"0440031600111",
+		"invoiceNo":"28143733",
+		"taxTotal":"36元",
+		"status":"S",
+		"createTime":"2017-05-12 00:00:00"
+	}
+}

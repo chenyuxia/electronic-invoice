@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <title>电子发票</title>
+    <link rel="stylesheet" href="style/public.css">
+    <script src="js/adaptation.js"></script>
+    <script src="js/jquery-1.9.1.js"></script>
+    <script src="js/public.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/useInfor.js"></script>
+    <script src="js/validate.js"></script>
+    
+</head>
+<body>
+    <!-- 头部 -->
+    <header><div class="top"><a href="javascript:void" onclick="goBack()">返回</a>华安保险电子发票</div></header>
+    <!-- 用户填写信息 -->
+    <div class="main userInfo">
+        <div class="w">
+            <h2>增值税普通发票申请<i class="round-l"></i><i class="round-r"></i></h2>
+            <div class="bill">
+                <p class="invoice"><label for="">发票抬头<em>*</em></label><input type="text" placeholder="请输入发票抬头" maxlength="100"><i></i><span class="errorTips">请输入发票抬头</span></p>
+                <p class="email"><label for="">电子邮箱<em>*</em></label><input type="text" placeholder="请输入接收电子发票的邮箱"><span class="errorTips">请输入接收电子发票的邮箱</span><i></i></p>
+                <p class="tel"><label for="">手机号码<em>*</em></label><input type="text" placeholder="请输入手机号码" maxlength="11"><span class="errorTips">请输入手机号码</span><a href="javascript:;" class="colorGrye">发送验证码</a><i></i></p>
+                <p class="code"><label for="">验证码<em>*</em></label><input type="text" placeholder="请输入验证码"><i></i><span class="errorTips">请输入验证码</span></p>
+                <h3>纳税人信息<span class="shut"></span></h3>
+                <div class="taxpayer">
+                    <p><label for="">纳税人识别号</label><input type="text" placeholder="非必填，请输入纳税人识别号" maxlength="20"><i></i></p>
+                    <p><label for="">地址、电话</label><input type="text" placeholder="非必填，请输入地址、电话" maxlength="100"><i></i></p>
+                    <p><label for="">开户行及账号</label><input type="text" placeholder="非必填，请输入开户行及账号" maxlength="100"><i></i></p>
+                </div>
+                <table>
+                    <tr>
+                      <th>内容</th>
+                      <th>可开票金额（元）</th>
+                      <th>税率</th>
+                    </tr>
+                    <tr>
+                      <td>保险服务</td>
+                      <td id="premium">806.35</td>
+                      <td id="tax">6%</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="botbg"></div>
+        </div>
+        <div class="btn btnGary">提交</div>
+    </div>
+    <!-- 提交发票信息弹出层  -->
+    <div class="billMc">
+       <div class="mcbg"></div>
+       <!-- 确认信息 -->
+       <div class="mc-main" >
+          <h6><span></span>请仔细核对以下重要信息</h6>
+          <div class="useInfor">
+            <div class="clr"><p class="til">发票抬头：</p><p class="text"></p></div>
+            <div class="clr"><p class="til">电子邮箱：</p><p class="text"></p></div>
+            <div class="clr"><p class="til">手机号码：</p><p class="text"></p></div>
+          </div>
+          <div class="btns">
+              <div class="btn1">返回修改</div>
+              <div class="btn2">确认无误，提交</div>
+          </div>
+       </div>
+       <!-- 发票开具成功 -->
+       <div class="mc-main2" style="display: none">
+          <p>电子发票开具成功，我们将于T+1个工作日将电子发票文件发至您的邮箱，感谢关注华安保险！</p>
+          <div class="btn">确定</div>
+       </div>
+    </div>
+        
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <title>电子发票详情</title>
+    <link rel="stylesheet" href="style/public.css">
+    <script src="js/adaptation.js"></script>
+    <script src="js/jquery-1.9.1.js"></script>
+    <script src="js/public.js"></script>
+    <script src="js/billdetails.js"></script>
+    <script>
+        $(function(){
+          //添加到微信卡包显示弹窗提示
+          $('.btn2') .click(function(){
+            $('.billMc') .show();
+            $('html') .css('height','100%')
+          })
+          //查看微信卡包
+           $('.btn') .click(function(){
+            $('.billMc') .hide();
+            $('html') .css('height','')
+          })   
+        })
+    </script>
+</head>
+<body>
+    <!-- 头部 -->
+    <header><div class="top"><a href="javascript:void" onclick="goBack()">返回</a>华安保险电子发票</div></header>
+    <!-- 用户填写信息 -->
+    <div class="main billDetails">
+        <div class="w">
+            <h2>增值税普通发票申请<i class="round-l"></i><i class="round-r"></i></h2>
+            <div class="bill">
+                <p class="clr"><label>发票抬头</label><span></span></p>
+                <p class="clr"><label>金额</label><span></span></p>
+                <p class="clr"><label>税额</label><span></span></p>
+                <p class="clr"><label>价税合计</label><span></span></p>
+                <p class="clr"><label>销方名称</label><span></span></p>
+                <p class="clr"><label>发票代码</label><span></span></p>
+                <p class="clr"><label>发票号码</label><span></span></p>
+                <a href="" class="state">电子发票生成中，请刷新获取最新进展</a>
+            </div>
+            <div class="btns">
+                <a href="downtails.html" class="btn1">下载发票</a>
+                <a href="#" class="btn2">添加到微信卡包</a>
+            </div>
+        </div>
+    </div>
+    <div class="billMc" style="display: none;">
+        <div class="mcbg"></div>
+        <div class="mc-main2 plusok">
+            <p>添加至卡包成功</p>
+            <div class="btn">查看</div>
+        </div> 
+    </div>   
+</body>
+</html>
